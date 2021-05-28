@@ -56,7 +56,7 @@ test("Returns false when invalid wallet address is supplied, using exported func
   assert.deepStrictEqual(handshakeRegex("3MWvddmToBWnnPes3L45i1pRQDhPrLdznc"), false);
 });
 
-test("Returns false when an address with an extra 1 is supplied", () => {
+test("Returns false when an address with an extra 1 is supplied, using exported function", () => {
   assert.deepStrictEqual(handshakeRegex("hs1q98ddwl2lcpnnzfv1vrqad80qu97w0q72cyq2uy3"), false);
 });
 
@@ -64,11 +64,11 @@ test("Returns true when valid input is supplied, using exported function", () =>
   assert.deepStrictEqual(handshakeRegex("hs1q98ddwl2lcpnnzfvvrqad80qu97w0q72cyq2uy3"), true);
 });
 
-test("Returns true when short version 0 HNS address is supplied", () => {
+test("Returns true when short version 0 HNS address is supplied, using exported function", () => {
   assert.deepStrictEqual(handshakeRegex("hs1qphmqky96jhyet3f5ch7d0q8q4yxzy0w0rz5ut3"), true);
 });
 
-test("Returns true when long version 0 HNS address is supplied", () => {
+test("Returns true when long version 0 HNS address is supplied, using exported function", () => {
   assert.deepStrictEqual(handshakeRegex("hs1qk2g3zx3hr479nsq507nzgx5q3us60ewdp8jksj5hpkfumulqhy3qgsxwey"), true);
 });
 
