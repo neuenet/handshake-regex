@@ -33,6 +33,14 @@ test("Returns false when an address with an extra 1 is supplied", () => {
   assert.deepStrictEqual(dap("hs1q98ddwl2lcpnnzfv1vrqad80qu97w0q72cyq2uy3"), false);
 });
 
+test("Returns false when short version 31 wallet address is supplied", () => {
+  assert.deepStrictEqual(dap("hs1lqqqqhuxwgy"), false);
+});
+
+test("Returns false when long version 31 wallet address is supplied", () => {
+  assert.deepStrictEqual(dap("hs1lqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqwwtqjv"), false);
+});
+
 test("Returns true when valid input is supplied", () => {
   assert.deepStrictEqual(dap("hs1q98ddwl2lcpnnzfvvrqad80qu97w0q72cyq2uy3"), true);
 });
@@ -58,6 +66,14 @@ test("Returns false when invalid wallet address is supplied, using exported func
 
 test("Returns false when an address with an extra 1 is supplied, using exported function", () => {
   assert.deepStrictEqual(handshakeRegex("hs1q98ddwl2lcpnnzfv1vrqad80qu97w0q72cyq2uy3"), false);
+});
+
+test("Returns false when short version 31 wallet address is supplied, using exported function", () => {
+  assert.deepStrictEqual(handshakeRegex("hs1lqqqqhuxwgy"), false);
+});
+
+test("Returns false when long version 31 wallet address is supplied, using exported function", () => {
+  assert.deepStrictEqual(handshakeRegex("hs1lqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqwwtqjv"), false);
 });
 
 test("Returns true when valid input is supplied, using exported function", () => {
