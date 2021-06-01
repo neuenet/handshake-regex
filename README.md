@@ -13,6 +13,7 @@ $ npm i handshake-regex
 ## Notes
 
 - Version 31 Handshake addresses are _technically_ valid but they are also unspendable. For the sake of this module, those addresses are deemed invalid.
+- This module does not fully validate a Handshake address (that involves hashing and more). It is intended to show fairly quickly if an obviously incorrect address is indeed incorrect. For validation, you will want to use something like [hsd](https://github.com/handshake-org/hsd/blob/master/lib/primitives/address.js).
 
 
 
