@@ -12,7 +12,7 @@ $ npm i handshake-regex
 
 ## Notes
 
-- Version 31 Handshake addresses are _techinically_ valid but they are also unspendable. For the sake of this module, those addresses are deemed invalid.
+- Version 31 Handshake addresses are _technically_ valid but they are also unspendable. For the sake of this module, those addresses are deemed invalid.
 
 
 
