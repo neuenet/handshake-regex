@@ -70,9 +70,3 @@ $ npm run test:typescript
 # Test this module
 $ npm run test:assert
 ```
-
-
-
-## Support
-
-I don't drink coffee so if you like this module and want to support me, feel free to send some HNS to `hs1q98ddwl2lcpnnzfvvrqad80qu97w0q72cyq2uy3`!
